@@ -58,8 +58,11 @@ class SendEmail:
         # f.close()
         # part.add_header('Content-Disposition','attachment',filename='%s_测试报告.html' % time)
         # message.attach(part)
-        server = smtplib.SMTP()
-        server.connect(email_host)
+        #windows发送邮件
+        #server = smtplib.SMTP()
+        #server.connect(email_host)
+        #linux发送邮件
+        server=smtplib.SMTP_SSL(email_host,465)
         server.login(send_user, password)
         server.sendmail(send_user,user_list,message.as_string())
         server.close()
