@@ -1,0 +1,20 @@
+第1个接口获取默认搜索引擎，请求方式get
+请求地址https://wanandroid.com/wxarticle/chapters/json
+请求参数None
+第1个接口获取默认搜索引擎响应结果{'data': [{'children': [], 'courseId': 13, 'id': 408, 'name': '鸿洋', 'order': 190000, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 409, 'name': '郭霖', 'order': 190001, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 410, 'name': '玉刚说', 'order': 190002, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 411, 'name': '承香墨影', 'order': 190003, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 413, 'name': 'Android群英传', 'order': 190004, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 414, 'name': 'code小生', 'order': 190005, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 415, 'name': '谷歌开发者', 'order': 190006, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 416, 'name': '奇卓社', 'order': 190007, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 417, 'name': '美团技术团队', 'order': 190008, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 420, 'name': 'GcsSloop', 'order': 190009, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 421, 'name': '互联网侦察', 'order': 190010, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 427, 'name': 'susion随心', 'order': 190011, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 428, 'name': '程序亦非猿', 'order': 190012, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}, {'children': [], 'courseId': 13, 'id': 434, 'name': 'Gityuan', 'order': 190013, 'parentChapterId': 407, 'userControlSetTop': False, 'visible': 1}], 'errorCode': 0, 'errorMsg': ''}
+第2个接口获取热词，请求方式post
+请求地址http://localhost:6777/xinxin/user/register
+第3个接口QQ音乐，请求方式post
+请求地址https://app2019.lebaobei.com/apiP/login/doLogin
+请求参数{'loginid': 'ioscs1', 'password': '888888'}
+第3个接口QQ音乐响应结果{'code': 1, 'msg': '', 'data': {'comid': 5, 'classid': 9231, 'huiyuan': 0, 'huiyuanendtime': '2019-02-28 11:40:35', 'baby_id': 296513, 'isjk': 1, 'babyname': '李怡欣', 'ComName': '北京市朝阳区实验小学', 'classname': '大二班', 'password': '1234567', 'type': 1, 'uid': 296513, 'uname': '李子建', 'imageurl': 'http://images2019.lebaobei.com/kindergarten2019/classquan/photolbb_head/2020/09/21/6c21eced5136a69216a1af4a735dc85684506861.jpeg', 'userflag': 2}}
+第4个接口QQ音乐查看更多，请求方式post
+请求地址http://localhost:6777/xinxin/user/register
+第5个接口登录慕课网，请求方式post
+请求地址https://www.imooc.com/passport/user/login
+请求参数{"username": "", "password": "", "verify": "", "remember": "1", "pwencode": "1", "browser_key": "b6dd3d58b6723cfafe20f166ae5a31dd", "referer": "https://www.imooc.com"}
+第5个接口登录慕课网响应结果{'status': 90008, 'msg': '参数错误', 'data': []}
+第6个接口慕课网课程下单，请求方式post
+请求地址http://localhost:6777/xinxin/user/register
+第7个接口登录慕课网，请求方式post
+请求地址http://localhost:6777/xinxin/user/register
