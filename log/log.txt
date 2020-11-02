@@ -1,6 +1,6 @@
 
 第2条用例报错:
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039ABC7C18>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CCA2128>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -31,7 +31,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039ABC7C18>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CCA2128>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -42,7 +42,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039ABC7C18>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CCA2128>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -63,10 +63,10 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039ABC7C18>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CCA2128>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 第4条用例报错:
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039AFB1CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -97,7 +97,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039AFB1CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -108,7 +108,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039AFB1CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -129,8 +129,8 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039AFB1CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039AFB1CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -161,7 +161,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039AFB1CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -172,7 +172,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039AFB1CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -193,10 +193,10 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039AFB1CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 第6条用例报错:
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -227,7 +227,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -238,7 +238,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -259,8 +259,8 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -291,7 +291,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -302,7 +302,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -323,8 +323,8 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -355,7 +355,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -366,7 +366,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -387,10 +387,10 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B084908>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 第7条用例报错:
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -421,7 +421,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -432,7 +432,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -453,8 +453,8 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -485,7 +485,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -496,7 +496,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -517,8 +517,8 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -549,7 +549,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -560,7 +560,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -581,8 +581,8 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 Traceback (most recent call last):
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -613,7 +613,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
 
 During handling of the above exception, another exception occurred:
 
@@ -624,7 +624,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 During handling of the above exception, another exception occurred:
 
@@ -645,7 +645,7 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002039B0CF9B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 第16条用例报错:
 String longer than 32767 characters

@@ -1,0 +1,298 @@
+ERROR    root:print_log.py:38 HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CCA2128>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 355, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 183, in connect
+    conn = self._new_conn()
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CCA2128>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CCA2128>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\work\python3_interface-master\main\test_api.py", line 84, in test_go_on_run
+    res = RunMethod().run_main(method,url,data,header,params=data)
+  File "D:\work\python3_interface-master\util\runmethod.py", line 25, in run_main
+    res = self.post_main(url,data,header)
+  File "D:\work\python3_interface-master\util\runmethod.py", line 9, in post_main
+    res = requests.post(url=url,data=data,headers=header)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CCA2128>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+ERROR    root:print_log.py:38 HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 355, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 183, in connect
+    conn = self._new_conn()
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\work\python3_interface-master\main\test_api.py", line 84, in test_go_on_run
+    res = RunMethod().run_main(method,url,data,header,params=data)
+  File "D:\work\python3_interface-master\util\runmethod.py", line 25, in run_main
+    res = self.post_main(url,data,header)
+  File "D:\work\python3_interface-master\util\runmethod.py", line 9, in post_main
+    res = requests.post(url=url,data=data,headers=header)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CB9A470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+ERROR    root:print_log.py:38 HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 355, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 183, in connect
+    conn = self._new_conn()
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\work\python3_interface-master\main\test_api.py", line 84, in test_go_on_run
+    res = RunMethod().run_main(method,url,data,header,params=data)
+  File "D:\work\python3_interface-master\util\runmethod.py", line 25, in run_main
+    res = self.post_main(url,data,header)
+  File "D:\work\python3_interface-master\util\runmethod.py", line 9, in post_main
+    res = requests.post(url=url,data=data,headers=header)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CD74710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+ERROR    root:print_log.py:38 HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 355, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\EDZ\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 183, in connect
+    conn = self._new_conn()
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\EDZ\venv\lib\site-packages\urllib3\util\retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\work\python3_interface-master\main\test_api.py", line 84, in test_go_on_run
+    res = RunMethod().run_main(method,url,data,header,params=data)
+  File "D:\work\python3_interface-master\util\runmethod.py", line 25, in run_main
+    res = self.post_main(url,data,header)
+  File "D:\work\python3_interface-master\util\runmethod.py", line 9, in post_main
+    res = requests.post(url=url,data=data,headers=header)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\EDZ\venv\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=6777): Max retries exceeded with url: /xinxin/user/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C5CC7DBA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+ERROR    root:print_log.py:38 String longer than 32767 characters
+Traceback (most recent call last):
+  File "D:\work\python3_interface-master\main\test_api.py", line 115, in test_go_on_run
+    GetData().write_result(i,json.dumps(res))
+  File "D:\work\python3_interface-master\data\get_data.py", line 83, in write_result
+    self.oper_excel.write_value(row,col,value)
+  File "D:\work\python3_interface-master\util\operation_excel.py", line 42, in write_value
+    write_data.save(self.file_name)
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\Workbook.py", line 710, in save
+    doc.save(filename_or_stream, self.get_biff_data())
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\Workbook.py", line 674, in get_biff_data
+    shared_str_table   = self.__sst_rec()
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\Workbook.py", line 636, in __sst_rec
+    return self.__sst.get_biff_record()
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\BIFFRecords.py", line 77, in get_biff_record
+    self._add_to_sst(s)
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\BIFFRecords.py", line 92, in _add_to_sst
+    u_str = upack2(s, self.encoding)
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\UnicodeUtils.py", line 55, in upack2
+    raise Exception('String longer than 32767 characters')
+Exception: String longer than 32767 characters
+ERROR    root:print_log.py:38 String longer than 32767 characters
+Traceback (most recent call last):
+  File "D:\work\python3_interface-master\main\test_api.py", line 115, in test_go_on_run
+    GetData().write_result(i,json.dumps(res))
+  File "D:\work\python3_interface-master\data\get_data.py", line 83, in write_result
+    self.oper_excel.write_value(row,col,value)
+  File "D:\work\python3_interface-master\util\operation_excel.py", line 42, in write_value
+    write_data.save(self.file_name)
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\Workbook.py", line 710, in save
+    doc.save(filename_or_stream, self.get_biff_data())
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\Workbook.py", line 674, in get_biff_data
+    shared_str_table   = self.__sst_rec()
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\Workbook.py", line 636, in __sst_rec
+    return self.__sst.get_biff_record()
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\BIFFRecords.py", line 77, in get_biff_record
+    self._add_to_sst(s)
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\BIFFRecords.py", line 92, in _add_to_sst
+    u_str = upack2(s, self.encoding)
+  File "C:\Users\EDZ\venv\lib\site-packages\xlwt\UnicodeUtils.py", line 55, in upack2
+    raise Exception('String longer than 32767 characters')
+Exception: String longer than 32767 characters
