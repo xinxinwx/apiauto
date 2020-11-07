@@ -24,10 +24,12 @@ class TestRun():
     def test_go_on_run(self):
         global pass_count
         global fail_count
+        global token
         res = None
         pass_count = []
         fail_count = []
         no_run_count = []
+        token=''
         rows_count = GetData().get_case_lines()
 
         #每次执行用例之前将log日志文件清空数据
@@ -54,12 +56,14 @@ class TestRun():
                     header = GetData().get_header_value(i)
                     expect = GetData().get_expect_data(i)
                     depend_case = GetData().is_depend(i)
+                    istoken=GetData().get_token(i)
+                    print(istoken)
                     print("第",i,"个接口",name,"请求方式", method, "\n",
                           "请求地址", url, "\n",
                           )
                     with open(api_file, 'a') as f1:
                         f1.write("第%s个接口%s，请求方式%s\n请求地址%s\n" % (i,name,method,url))
-                    # initLogging(api_file, 'nice')
+
                     if depend_case != None:
                         self.depend_data = DependentData(depend_case)
                         #获取依赖字段的响应数据
@@ -79,16 +83,21 @@ class TestRun():
                             data[depend_key] = str(depend_response_data)
                     # cookie相关的没有跑通，代码逻辑是正常的，但是模拟登陆返回一直是非法请求
                     if header_key == 'write_Cookies':
-                        header = {'Content-Type': 'application/json'}
+                        header = {'Content-Type': 'application/json',
+                                  "X-Lemonban-Media-Type" : "lemonban.v2"}
+                        if(istoken and token != ''):
+                            header['Authorization']=token
                         data=json.dumps(data)
                         res = RunMethod().run_main(method,url,data,header,params=data)
                         # op_header = OperationHeader(res)
                         # op_header.write_cookie()
-                        with open(api_file, 'a') as f1:
+                        with open(api_file, 'w',encoding='utf-8') as f1:
                             f1.write("请求参数%s\n" % (data))
                             f1.write("第%s个接口%s响应结果%s\n" % (i,name,res))
                         print("请求参数", data, '\n')
                         print("第", i, "个接口",name,"响应结果\n", res, '\n')
+                        if(name == '登录'):
+                            token=res['data']['token_info']['token']
 
                     # elif header_key == 'get_Cookies':
                     #     op_json = OperationJson('../dataconfig/cookie.json')
@@ -112,7 +121,8 @@ class TestRun():
                     '''
                     #excel中拿到的expect数据是str类型，但是返回的res是dict类型，两者数据比较必须都是字符类型
                     if CommonUtil().is_contain(expect,json.dumps(res)):
-                        GetData().write_result(i,json.dumps(res))
+                        # GetData().write_result(i,json.dumps(res))
+                        GetData().write_result(i,"成功")
                         pass_count.append(i)
                     else:
                         #返回的res是dict类型，要将res数据写入excel中，需将dict类型转换成str类型

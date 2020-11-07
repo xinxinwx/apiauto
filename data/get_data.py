@@ -82,6 +82,11 @@ class GetData:
         col = int(data_config.get_result())
         self.oper_excel.write_value(row,col,value)
 
+    def get_token(self,row):
+        col = int(data_config.get_token())
+        token = self.oper_excel.get_cell_value(row, col)
+        return token
+
     #获取依赖数据的key
     def get_depend_key(self,row):
         col = int(data_config.get_data_depend())

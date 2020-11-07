@@ -14,6 +14,7 @@ class global_var():
     request_data = '9'
     expect = '10'
     result = '11'
+    token = '12'
 
 #获取caseid
 def get_id():
@@ -63,6 +64,8 @@ def get_expect():
 def get_result():
     return global_var.result
 
-
+#获取token
+def get_token():
+    return global_var.token
 
 

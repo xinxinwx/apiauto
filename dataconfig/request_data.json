@@ -1,10 +1,9 @@
 {
-	"test": {
-
+	"cz": {
+      "amount":"100"
 	},
 	"login": {
-		"username": "15631440614",
-		"password": "123456"
+		"mobile_phone":"18210783228","pwd":"12346789"
 	},
 	"lbb": {
 		"loginid": "ioscs1",
