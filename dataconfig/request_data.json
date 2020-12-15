@@ -1,0 +1,33 @@
+{
+	"cz": {
+      "amount":"100"
+	},
+	"login": {
+		"mobile_phone":"18210783228","pwd":"12346789"
+	},
+	"lbb": {
+		"loginid": "ioscs1",
+		"password": "888888"
+	},
+	"test": {
+		"username": "15631440614"
+	},
+	"qqmusic_more": {
+		"osv": "Flyme 7.8.5.8 daily",
+		"aid": "864044030085594"
+	},
+	"user": {
+		"username": "",
+		"password":"",
+		"verify": "",
+		"remember":"1",
+		"pwencode":"1",
+		"browser_key":"b6dd3d58b6723cfafe20f166ae5a31dd",
+		"referer": "https://www.imooc.com"
+	},
+	"shop": {
+		"jsonpcallback": "jQuery111302908114778786126_1528250007749",
+		"goods_ids": "723",
+		"_": "1528250007757"		
+	}
+}

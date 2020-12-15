@@ -1,0 +1,9 @@
+{
+	"engine_header": {
+		"Content-Type":"application/x-www-form-urlencoded"
+	},
+	"write_Cookies":{
+		"Content-Type": "application/json; charset=UTF-8"
+
+	}
+}
