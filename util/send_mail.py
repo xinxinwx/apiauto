@@ -17,7 +17,8 @@ class SendEmail:
 
     def send_main(self,pass_list,fail_list):
         # 邮件发送给谁
-        user_list = ['380222985@qq.com','lishuailei_v@zuoyebang.com']
+        #'lishuailei_v@zuoyebang.com'
+        user_list = ['380222985@qq.com']
 
         user = "测试报告" + "<" + send_user + ">"
         message = MIMEMultipart()
